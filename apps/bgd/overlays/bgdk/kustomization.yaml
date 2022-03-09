@@ -1,4 +1,4 @@
-apiVersion: kustomize.config.k8s.io/v1beta1
+wapiVersion: kustomize.config.k8s.io/v1beta1
 kind: Kustomization
 namespace: bgdk
 resources:
@@ -14,4 +14,4 @@ patchesJson6902:
     patch: |-
       - op: replace
         path: /spec/template/spec/containers/0/env/0/value
-        value: red
+        value: yellow
